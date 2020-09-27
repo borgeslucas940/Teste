@@ -18,7 +18,7 @@ void init()
     install_allegro(SYSTEM_NONE, &errno, NULL);
     set_color_depth(32);
 
-    BITMAP *bmp= create_bitmap(200, 200);
+    BITMAP *bmp= create_bitmap(100, 100);
     if(!bmp)
     {
         printf("BITMAP nao criado\n");

@@ -14,8 +14,9 @@ END_OF_MAIN()
 
 void init()
 {
-    allegro_init();
+    //allegro_init();
     install_allegro(SYSTEM_NONE, &errno, NULL);
+    set_color_depth(32);
 
     BITMAP *bmp= create_bitmap(200, 200);
     if(!bmp)
@@ -23,9 +24,6 @@ void init()
         printf("BITMAP nao criado\n");
         return;
     }
-    clear_bitmap(bmp);
-
-    set_color_depth(32);
     circlefill(bmp, 50, 50, 20, makecol(0, 255, 0));
     
     save_bmp("ex3.bmp", bmp, NULL);

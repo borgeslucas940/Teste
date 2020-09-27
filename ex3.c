@@ -14,6 +14,7 @@ END_OF_MAIN()
 
 void init()
 {
+    allegro_init();
     install_allegro(SYSTEM_NONE, &errno, NULL);
 
     BITMAP *bmp= create_bitmap(200, 200);

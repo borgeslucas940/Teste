@@ -27,8 +27,6 @@ void init()
 
     set_color_depth(32);
     circlefill(bmp, 50, 50, 20, makecol(0, 255, 0));
-    circlefill(bmp, 30, 30, 30, makecol(255, 0, 0));
-    circlefill(bmp, 70, 70, 20, makecol(0, 0, 255));
     
     save_bmp("ex3.bmp", bmp, NULL);
     destroy_bitmap(bmp);
